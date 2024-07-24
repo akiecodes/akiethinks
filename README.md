@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+Akie Thinks
+Akie Thinks is a Reddit-inspired blog application that allows users to register, log in, create, edit, and view posts. Built using MongoDB, Node.js, React, Express, and JWT tokens, this application provides a simple yet robust platform for users to share their thoughts and interact with others.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+User Registration & Authentication: Users can sign up, log in, and manage their sessions using JWT tokens.
+Create & Edit Posts: Authenticated users can create and edit their posts.
+View Posts: Users can view posts made by themselves and others.
+Tech Stack
+Frontend: React
+Backend: Node.js, Express
+Database: MongoDB
+Authentication: JWT Tokens
+Installation
+Prerequisites
+Node.js (>= 14.x)
+MongoDB
+npm (Node Package Manager)
+Setup
+Clone the Repository
 
-## Available Scripts
+bash
+Copy code
+git clone https://github.com/akiecodes/akiethinks.git
+cd akiethinks
+Backend Setup
 
-In the project directory, you can run:
+Navigate to the backend directory:
 
-### `npm start`
+bash
+Copy code
+cd backend
+Install the necessary packages:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+npm install
+Create a .env file in the backend directory and add the following environment variables:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+env
+Copy code
+MONGO_URI=<Your MongoDB Connection String>
+JWT_SECRET=<Your JWT Secret>
+Start the backend server:
 
-### `npm test`
+bash
+Copy code
+npm start
+Frontend Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Navigate to the frontend directory:
 
-### `npm run build`
+bash
+Copy code
+cd ../frontend
+Install the necessary packages:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy code
+npm install
+Start the frontend development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy code
+npm start
+Open the Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The backend server should be running at http://localhost:5000.
+The frontend application should be accessible at http://localhost:3000.
+API Endpoints
+User Authentication
+Register: POST /api/auth/register
+Login: POST /api/auth/login
+Posts
+Create Post: POST /api/posts
+Edit Post: PUT /api/posts/:id
+Get All Posts: GET /api/posts
+Get Post by ID: GET /api/posts/:id
+Usage
+Register a New User
 
-### `npm run eject`
+Use the registration form on the frontend to sign up.
+Log In
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Log in to the application to receive a JWT token for authentication.
+Create/Edit Posts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Use the provided forms to create new posts or edit existing ones.
+View Posts
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Navigate to the posts section to view all posts and details of individual posts.
+Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Learn More
+Acknowledgments
+Inspiration from Reddit
+Technologies: MongoDB, Node.js, React, Express, JWT
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
