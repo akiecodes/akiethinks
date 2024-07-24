@@ -1,4 +1,4 @@
-#AkieThinks
+# AkieThinks
 
 Akie Thinks is a Reddit-inspired blog application that allows users to register, log in, create, edit, and view posts. Built using MongoDB, Node.js, React, Express, and JWT tokens, this application provides a simple yet robust platform for users to share their thoughts and interact with others.
 
